@@ -1,0 +1,19 @@
+def AdditivePersistence(num)
+
+  a = num.to_s.split(//)
+  a.map!{|n| n.to_i}
+  b = 0
+  sum = num
+  while sum >= 10
+  	a = sum.to_s.split(//)
+    a.map!{|n| n.to_i}
+    sum = arr.inject(:+)
+    b +=1
+  end
+  b
+         
+end 
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+AdditivePersistence(STDIN.gets)         
