@@ -1,0 +1,14 @@
+def RunLength(str)
+  a = str.scan(/((\w)\2*)/)
+  
+  output = ''
+  a.each do |chunk|
+    output << chunk[0].size.to_s + chunk[1]
+  end
+  
+  output
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+RunLength(STDIN.gets)
